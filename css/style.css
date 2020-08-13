@@ -2,35 +2,274 @@
     margin: 0;
     padding: 0;
 }
-header#header1{
-    background-color: rgb(145, 140, 140);
-    width: 100%;
-    height: 200px;
+body{
+    font-family: 'Playfair Display', serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+main{
+    position: relative;
+    /*background-color: gray;*/
+    width: 900px;
+    height: 1000px;
+    float: left;
+}
+
+.card{
+    background-color: pink;
+    width: 900px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
+    margin-bottom: 50px;
+}
+
+div#imagem{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-image: url(../img/amanda.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+
 div#cardpessoal{
-    margin-top: 150px;
+    margin-top: 40px;
     background-color: pink;
     width: 900px;
     height: 350px;
 }
-h1#nome{
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+
+div#cardpessoal span{
     position: absolute;
-    margin-top: 50px;
-    margin-left: -540px;
-}
-span#profissao{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
+    margin-left: 320px;
+    font-size: 18px;
+}
+
+.card-título{
     position: absolute;
-    margin-top: 90px;
-    margin-left: -810px;
+    margin-top: 30px;
+    margin-left: 85px;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: black;
+}
+
+div#cardpessoal span#subtítulo{
+    margin-top: 45px;
+    color: black;
+    font-weight: lighter;
+}
+
+div#linha{
+    width: 455px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 320px;
+    border: 1px solid black;
+}
+
+div#cardpessoal footer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    margin-top: 200px;
+    width: 600px;
+    height: 60px;
+    align-items: center;
+    background-color: black;
+    /*bottom: 0px;*/
+}
+
+div#cardpessoal footer a{
+    width: 120px;
+    color: pink;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+div#card-sobre{
+    height: 260px;
+} 
+
+.linha{
+    position: absolute;
+    border: 1px solid black;
+    width: 730px;
+    margin-left: 85px;
+    margin-top: 75px;
+}
+
+.text-card{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: lighter;
+}
+
+div#card-sobre p{
+    position: absolute;
+    width: 720px;
+    height: 850px;
+    margin-left: 85px;
+    margin-top: 100px;
+}
+
+div#card-formação{
+    height: 600px;
+}
+
+div#card-formação ul{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+div#card-formação ul li{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+div#card-formação ul span{
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+div#card-formação ul p{
+    width: 670px;
+    margin-bottom: 30px;
+}
+
+div#habilidades{
+    height: 600px;
+}
+
+h1#nome{
+    color: pink;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+h2#profissao{
+    color: pink;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+div#main{
+    width: 730px;
+    height: 520px;
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 75px;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 20px;
+}
+
+.coluna-50{
+    width: 50%;
+    height: 80px;
+}
+
+div#main span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.status-100{
+    width: 286px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: black;
+    margin-top: 15px;
+}
+
+div#meu-status-org{
+    width: 257px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-trab{
+    width: 130pxpx;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-pac{
+    width: 114px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-ded{
+    width: 212px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-per{
+    width: 200px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-cri{
+    width: 250px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-res{
+    width: 185px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-ger{
+    width: 170px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-con{
+    width: 118px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+div#meu-status-dis{
+    width: 210px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(230, 78, 103);
+}
+
+
