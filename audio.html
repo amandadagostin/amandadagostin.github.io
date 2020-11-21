@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Audio</title>
+    <link rel="stylesheet" href="./audio.css">
+</head>
+<body>
+    <div id="card-musica" class="card">
+    <h1 class="audiotext">play a song</h1>
+    <audio src="The Hills.mp3"></audio>
+    <div class="linha"></div>
+    <button class="botao">play</button>
+    <script>
+        const button = document.querySelector("button")
+        button.addEventListener("click", function(){
+            const audio = document.querySelector("audio")
+            audio.play()
+
+        })
+    </script>
+    </div>
+</body>
+</html>

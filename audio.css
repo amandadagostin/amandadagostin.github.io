@@ -1,0 +1,37 @@
+.botao{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 0, 5px, 0 pink;
+    margin-left: 405px;
+    margin-top: 20px;
+}
+
+.linha {
+    position: absolute;
+    border: 1px solid pink;
+    width: 750px;
+    margin-left: 75px;
+    margin-top: -10px;
+}
+
+.card {
+    background-color: black;
+    width: 900px;
+    height: 200px;
+    box-shadow: 3px 3px 15px gray;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+
+.audiotext{
+    margin-top: 15px;
+    margin-left: 366px;
+    font-size: 32px !important;
+    font-weight: bold;
+    color: pink;
+}
